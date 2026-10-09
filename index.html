@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programming Basics — The Knowledge Game</title>
+  <meta name="description" content="A retro Python quiz with 240 questions, adaptive difficulty, pixel-art companions, and four worlds to master." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111410'/><text x='6' y='23' font-family='monospace' font-size='18' fill='%23c6ff3d'>&gt;_</text></svg>" />
+  <link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+  <div class="crt" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="prompt">&gt;&gt;&gt;</span>
+      <span class="brand-name">PROGRAMMING BASICS</span>
+    </div>
+    <ol class="level-track" id="level-track" aria-label="Level progress"></ol>
+  </header>
+
+  <main id="screen" class="screen"><noscript>This quiz needs JavaScript. Enable it in your browser and reload to play.</noscript></main>
+  <div id="status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <footer class="foot">
+    <span>keys: <kbd>A</kbd>–<kbd>D</kbd> answer · <kbd>Enter</kbd> continue</span>
+    <span>pass mark 80%</span>
+  </footer>
+
+  <script type="module" src="./app.js?v=2"></script>
+</body>
+</html>
